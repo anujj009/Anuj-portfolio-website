@@ -5,7 +5,7 @@ const Footer = () => {
     <>
     <div id='footer' className='bg-black text-white py-5 flex justify-between px-20'>
         <div className=''>
-            <p>@2023 Anuj sahu <span>All Rights Reserved</span></p>
+            <p>@2023 Anuj sahu <span className='ml-5'> All Rights Reserved</span></p>
         </div>
         <div className='space-x-5'>
             <a href="">About</a>

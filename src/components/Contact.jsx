@@ -49,7 +49,7 @@ const Contact = () => {
             </div> */}
 
         <div className=" flex justify-center  space-y-4 ">
-          <div className=" border-solid border-2 px-20 py-2 bg-white shadow-2xl shadow-indigo-500/50 border-indigo-600  rounded-3xl 2/4  text-center">
+          <div className=" border-solid border-2 px-20 py-2 bg-slate-100 shadow-2xl shadow-indigo-500/50 border-indigo-600  rounded-3xl 2/4  text-center">
             <form className="  " ref={form} onSubmit={sendEmail}>
               <ul className="  ">
                 <li className=" ">

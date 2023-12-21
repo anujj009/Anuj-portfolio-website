@@ -49,7 +49,7 @@ const Skills = () => {
             <div className=" flex justify-center max-w-sm md:max-w-prose md:mr-12 mr-10 space-x-3 flex-wrap  ">
               {data.map((skill) => (
                 <p 
-                  className="bg-gray-200 w-fit h-fit px-3 py-2 rounded-full hover:bg-slate-400 hover:cursor-default"
+                  className="bg-gray-100 w-fit h-fit px-3 py-2 rounded-full hover:bg-slate-400 hover:cursor-default"
                 >
                   {skill.title}
                 </p>

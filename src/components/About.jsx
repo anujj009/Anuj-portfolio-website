@@ -11,10 +11,7 @@ const About = () => {
     desc2: ` I am a team player and I am always willing to go the extra mile. I am passionate about web development and I am always looking for new ways to learn and grow. 
               I have a strong work ethic and I am always willing to take on new challenges.`,
     desc3: `I am looking for a new opportunity to use my skills and experience to make a positive impact on the world. I am confident that I would be a valuable asset to any team.`,
-    // actionButton: {
-    //   title: "Read More..",
-    //   link: "/readmore",
-    // },
+
   });
 
   return (
@@ -24,13 +21,13 @@ const About = () => {
 
         <div className="flex items-center px-8 ">
           {/*image*/}
-          <div className="w-fit lg:pl-24 flex justify-center  ">
+          {/* <div className="w-fit lg:pl-24 flex justify-center  ">
             <img className="h-2/4 w-fit rounded-full shadow-2xl" src={data.image} alt="" />
-          </div>
+          </div> */}
 
           {/*text*/}
           <div className=" w-full flex justify-center">
-            <div className="space-y-5 text-lg font-medium w-2/3">
+            <div className="space-y-5 text-lg text-justify font-medium w-3/4">
               {/* <h1 className="text-4xl font-semibold ">{data.title}</h1> */}
               <p>{data.desc1}</p>
               <p>{data.desc2}</p>

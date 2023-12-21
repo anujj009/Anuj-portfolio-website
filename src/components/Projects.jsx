@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const Projects = () => {
 
@@ -40,7 +40,8 @@ const Projects = () => {
         <div className='projects-container flex mt-12 space-x-5 px-10'>
 
             {data.map((set) => (
-                <div className=' hover:bg-slate-300 cursor-pointer bg-slate-200 p-5 text-center space-y-4 shadow-2xl rounded-xl'>
+                <div className=' hover:bg-slate-300 cursor-pointer bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500 border-solid border-2 border-gray-600  p-5 text-center space-y-4 shadow-2xl rounded-xl'>
+                
                     <h1 className='text-3xl'>
                         {set.title}
                     </h1>

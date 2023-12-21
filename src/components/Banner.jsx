@@ -12,7 +12,7 @@ const Banner = () => {
     >
       {/* first box */}
 
-      <div className=" w-screen sm:w-full mx-20 flex justify-center ">
+      <div className=" w-screen sm:w-full sm:mx-20 mx-8 flex justify-center ">
         
         {/*text */}
         <div className="h-auto  max-w-screen-lg mx-auto md:mx-0">
@@ -50,9 +50,9 @@ const Banner = () => {
       {/* second box */}
 
       <div className=" w-full ml-20 flex justify-center">
-        {" "}
+      
         {/*image */}
-        <img className="rounded-full shadow-2xl max-w-full h-auto" src={bannerImage} alt="" />
+        <img className="rounded-full shadow-2xl  max-w-sm h-auto" src={bannerImage} alt="" />
       </div>
     </div>
   );
