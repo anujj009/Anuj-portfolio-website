@@ -41,19 +41,21 @@ const Header = () => {
 
   return (
     <>
-      <div className="h-auto py-3 sm:h-20 sm:p-10 shadow-lg  sticky top-0 items-center w-full  bg-black text-white main flex justify-between px-10">
+      <div className="h-auto py-3 sm:h-20 sm:p-10 shadow-lg  sticky top-0 items-center w-full  bg-black text-white main flex justify-between px-5">
         <div>
-          {" "}
+          
           {/*brand logo*/}
           <h1 className="text-3xl sm:text-4xl font-semibold font-signature">{brandName}</h1>
         </div>
 
         <div className=" md:max-lg:flex  md:flex-row lg:mt-0 ">
-          <div className="block md:hidden max-md: max-w-md" onClick={toggleNav}>
+          
+          <div className="max-w-screen-x ">
+          <div className=" block md:hidden max-md: max-w-md" onClick={toggleNav}>
             <i class="fa-solid text-3xl fa-bars"></i>
           </div>
           {isNavOpen && (
-            <div className="{`md:${isNavOpen ? 'hidden' : 'block'} bg-slate-600 absolute p-5 space-y-2 flex  flex-col items-center justify-center">
+            <div className="{`md:${isNavOpen ? 'hidden' : 'block'} border-indigo-800 border-2 bg-black absolute p-5 space-y-2  flex  flex-wrap flex-col items-center justify-center">
               {menuLinks.map((link) => (
                 <Link
                   className="hover:text-blue-700 text-lg hover:cursor-pointer md:max-md:flex "
@@ -67,6 +69,7 @@ const Header = () => {
               ))}
             </div>
           )}
+          </div>
 
           <div className=" md:block hidden max-w-md md:max-md:flex md:space-x-6 lg:mt-0  items-center justify-center">
             {menuLinks.map((link) => (

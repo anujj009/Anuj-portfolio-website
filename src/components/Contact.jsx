@@ -40,21 +40,18 @@ const Contact = () => {
   };
 
   return (
-    <div id="5" className=" w-full my-15 py-5">
+    <div id="5" className=" w-full my-15 md:py-5 mb-10">
       <h1 className="text-center text-5xl font-bold">Contact Me</h1>
 
-      <div className=" mt-10  ">
-        {/* <div className='rounded-full flex justify-center w-2/4  '>
-                <img className='w-2/6 ' src={conImage} alt="" />
-            </div> */}
+      <div className=" mt-10 mx-5 ">
 
-        <div className=" flex justify-center  space-y-4 ">
-          <div className=" border-solid border-2 px-20 py-2 bg-slate-100 shadow-2xl shadow-indigo-500/50 border-indigo-600  rounded-3xl 2/4  text-center">
+        <div className=" flex justify-center space-y-4 ">
+          <div className="w-full border-solid border-2 sm:max-w-sm px-10 md:px-20 py-2 bg-slate-100 shadow-2xl shadow-indigo-500/50 border-indigo-600  rounded-3xl  text-center">
             <form className="  " ref={form} onSubmit={sendEmail}>
               <ul className="  ">
                 <li className=" ">
                   <label className="block text-lg py-3 font-semibold leading-6 text-gray-900">
-                    Name:{" "}
+                    Name:
                   </label>
                   <input
                     type="text"
@@ -66,8 +63,7 @@ const Contact = () => {
 
                 <li className=" ">
                   <label className="block text-lg py-3 font-semibold leading-6 text-gray-900">
-                    {" "}
-                    Email:{" "}
+                    Email:
                   </label>
                   <input
                     type="email"
@@ -78,8 +74,7 @@ const Contact = () => {
                 </li>
                 <li className="">
                   <label className="block text-lg py-3 font-semibold leading-6 text-gray-900">
-                    {" "}
-                    Message:{" "}
+                    Message:
                   </label>
                   <textarea
                     name="message"

@@ -27,7 +27,7 @@ const About = () => {
 
           {/*text*/}
           <div className=" w-full flex justify-center">
-            <div className="space-y-5 text-lg text-justify font-medium w-3/4">
+            <div className="space-y-5 text-lg text-justify font-medium w-fit sm:w-3/4">
               {/* <h1 className="text-4xl font-semibold ">{data.title}</h1> */}
               <p>{data.desc1}</p>
               <p>{data.desc2}</p>

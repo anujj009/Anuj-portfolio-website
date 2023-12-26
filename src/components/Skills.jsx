@@ -27,14 +27,14 @@ const Skills = () => {
   return (
     <>
       <div id="4" className="my-3 py-5">
-        <h1 className="mb-16 text-5xl font-bold text-center">My Skills</h1>
+        <h1 className="mb-10  text-5xl font-bold text-center">My Skills</h1>
         {/* boxed section */}
-        <div className="box-container flex py-15">
-          <div className="flex  w-2/4 justify-center">
+        <div className="box-container lg:flex py-15">
+          <div className=" lg:w-2/4 md:w-fit justify-center mb-5">
             {/*text container*/}
-            <div className="w-2/3 text-center text-lg space-y-4">
-              <h1>I'm aware of these technologies</h1>
-              <p>
+            <div className="w-fit  lg:flex-none mx-auto text-center text-lg space-y-4">
+              <h1 className="">I'm aware of these technologies.</h1>
+              <p className="hidden md:block">
               Navigating both the front-end and back-end realms, I've honed my skills in a diverse range of technologies.
               These are technologies I've worked with to write purpose-driven code for various functionalities. 
                 
@@ -45,11 +45,11 @@ const Skills = () => {
 
           {/*skills*/}
 
-          <div className="flex  max-w-fit justify-center">
-            <div className=" flex justify-center max-w-sm md:max-w-prose md:mr-12 mr-10 space-x-3 flex-wrap  ">
+          <div className="flex max-w-full justify-center  ">
+            <div className=" flex justify-center max-w-full md:max-w-prose lg:mr-12 mx-5  space-x-2 flex-wrap  ">
               {data.map((skill) => (
                 <p 
-                  className="bg-gray-100 w-fit h-fit px-3 py-2 rounded-full hover:bg-slate-400 hover:cursor-default"
+                  className="bg-gray-100 w-fit h-fit px-3 py-2 mb-2 rounded-full hover:bg-slate-400 hover:cursor-default"
                 >
                   {skill.title}
                 </p>
